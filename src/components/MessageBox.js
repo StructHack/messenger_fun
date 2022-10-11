@@ -64,6 +64,13 @@ export class MessageBox extends Component {
             },
         ]
       }
+
+      this.viewRef = React.createRef();
+
+    }
+
+    componentDidMount(){
+        this.viewRef.current.scrollIntoView({behaviour:'smooth'});
     }
 
   render() {
@@ -74,6 +81,7 @@ export class MessageBox extends Component {
                 return <div key={info.id} className={(info.id%2==0)?'message-even':'message-odd'}>{info.content}</div>
             })
         }
+        <div className="dummy" ref={this.viewRef}></div>
       </div>
     )
   }
