@@ -1,0 +1,45 @@
+img{
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:2em;
+    padding:0.5em 0;
+    box-shadow: 2px 2px 3px rgb(186, 184, 184);
+    position: fixed;
+    width:inherit;
+    max-width: inherit;
+    background-color: white;
+}
+
+.header-accessories{
+   margin-left: auto;
+}
+
+.header-accessories img{
+    margin-right: 1.4em;
+}
+
+.header-identity{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+
+}
+
+.header-identity img{
+    height: 2.5em;
+    border-radius: 50%;
+}
+
+.header-identity span:first-child{
+    font-weight: bold;
+}
